@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .navbar{
+        @apply fixed top-0 w-full flex flex-row justify-center py-5 md:gap-10 shadow-lg font-semibold bg-white text-xs gap-5 md:text-base;
+    }
+    .title{
+        @apply md:text-5xl text-slate-800 font-bold text-3xl md:w-[400px] text-center md:text-left;
+    }
+    .btn{
+        @apply md:px-10 md:py-3 bg-slate-800 text-white rounded-full px-5 py-2;
+    }
+    .image-circle {
+        @apply md:w-[300px] rounded-full aspect-square w-[200px];
+    }
+    .icon {
+        @apply w-[30px] aspect-square;
+    }
+    .title2{
+        @apply md:text-2xl text-slate-800 font-bold text-center text-lg;
+    }
+    .paragraph{
+        @apply text-slate-800 text-justify font-semibold mx-auto w-[80%] md:w-[800px];
+    }
+}
